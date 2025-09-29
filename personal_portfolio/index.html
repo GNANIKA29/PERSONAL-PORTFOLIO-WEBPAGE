@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Developer Portfolio — Gnanika</title>
+  <meta name="description" content="Personal portfolio showcasing projects, skills, and contact info." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="brand">Gnanika GH</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="actions">
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button id="menu-toggle" class="hamburger" aria-label="Toggle menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-inner">
+        <h1 class="headline">Hi — I'm <span class="accent">Gnanika</span>, a Full‑Stack Developer</h1>
+        <p class="sub">I build accessible, performant, and beautiful web applications. I love solving real problems with clean code.</p>
+        <p class="meta">Available for freelance & collaboration • Open to internships</p>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>8+</strong><span>Projects</span></div>
+          <div class="stat"><strong>3</strong><span>Years Experience</span></div>
+          <div class="stat"><strong>20+</strong><span>Certificates</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I am a 4th-year Information Science student passionate about building web apps and learning new technologies. I focus on frontend design, usability, and performance.</p>
+          <p>My recent work includes a feature-rich quiz frontend, a KSRTC live bus tracker, and a machine-learning stroke-detection prototype.</p>
+          <ul class="about-list">
+            <li>Strong in HTML, CSS, JavaScript</li>
+            <li>Experience with Django and React</li>
+            <li>Interest in accessibility (a11y) and animations</li>
+          </ul>
+        </div>
+        <div class="about-highlights">
+          <div class="card"><h3>Teaching Assistant</h3><p>Helped juniors learn Web Dev basics and debugging.</p></div>
+          <div class="card"><h3>Open Source</h3><p>Contributed to small frontend libraries and documentation.</p></div>
+          <div class="card"><h3>Hobbies</h3><p>Writing blogs, experimenting with UI animations, and coffee.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>Frontend</h4>
+          <p>HTML5, CSS3, JavaScript (ES6+), Accessibility, Responsive Design</p>
+        </div>
+        <div class="skill">
+          <h4>Frameworks</h4>
+          <p>React, Tailwind (conceptual), Django for backend</p>
+        </div>
+        <div class="skill">
+          <h4>Tools</h4>
+          <p>Git, VSCode, Chrome DevTools, npm</p>
+        </div>
+        <div class="skill">
+          <h4>Other</h4>
+          <p>Testing, Performance Optimization, CI basics</p>
+        </div>
+      </div>
+      <div class="skill-bars">
+        <div class="bar"><label>HTML/CSS</label><div class="fill" style="--pct:95%"></div></div>
+        <div class="bar"><label>JavaScript</label><div class="fill" style="--pct:85%"></div></div>
+        <div class="bar"><label>React</label><div class="fill" style="--pct:80%"></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Quizzy Quest</h3>
+          <p>A dynamic quiz frontend with levels, timers, and leaderboard UI. Focus on accessibility, keyboard navigation, and animations.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="card-actions">
+            <a class="small-btn" href="#contact">Collaborate</a>
+            <button class="demo" onclick="showDemo('Quizzy Quest — demo notes: uses local question bank, restart on wrong answer for level logic.')">Notes</button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Where is My Bus?</h3>
+          <p>Prototype web app to track KSRTC buses and show live ETA. Built with mapping UI and websockets in mind.</p>
+          <div class="tags"><span>JS</span><span>APIs</span></div>
+          <div class="card-actions">
+            <a class="small-btn" href="#contact">Discuss</a>
+            <button class="demo" onclick="showDemo('Where is My Bus? — demo notes: intended to use KSRTC data feeds; privacy aware.')">Notes</button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Brain Stroke Detection</h3>
+          <p>ML prototype for risk detection with a Django frontend to accept inputs and display results (research-focused).</p>
+          <div class="tags"><span>Python</span><span>ML</span></div>
+          <div class="card-actions">
+            <a class="small-btn" href="#contact">Collaborate</a>
+            <button class="demo" onclick="showDemo('Brain Stroke Detection — demo notes: research prototype; not medical advice.')">Notes</button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Scholar Stack</h3>
+          <p>Academic resource hub with certificates, courses, and events. Designed card UI and vertical content flow for accessibility.</p>
+          <div class="tags"><span>UX</span><span>Django</span></div>
+          <div class="card-actions">
+            <a class="small-btn" href="#contact">Ask</a>
+            <button class="demo" onclick="showDemo('Scholar Stack — demo notes: content-first design with card layouts.')">Notes</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <h2>Testimonials</h2>
+      <div class="testimonials">
+        <blockquote>"Great problem-solver and fast learner." — Project Mentor</blockquote>
+        <blockquote>"Delivered clean UI and thoughtful UX." — Team Lead</blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>If you'd like to work together, share a brief message below.</p>
+      <form id="contact-form" class="contact-form" onsubmit="return handleContact(event)">
+        <input name="name" type="text" placeholder="Your name" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <input name="subject" type="text" placeholder="Subject" />
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <div class="form-actions">
+          <button class="btn" type="submit">Send Message</button>
+          <button class="btn ghost" type="button" onclick="resetForm()">Reset</button>
+        </div>
+      </form>
+      <div class="contact-meta">
+        <p><strong>Email:</strong> gnanikaa2004@gmail.com</p>
+        <p><strong>Location:</strong> Hassan, India</p>
+      </div>
+    </section>
+  </main>
+
+  <button id="scrollTop" title="Scroll to top">↑</button>
+
+  <footer class="site-footer">
+    <p>© 2025 Gnanika GH</p>
+  </footer>
+
+  <template id="modalTemplate">
+    <div class="modal-backdrop" id="modalBackdrop">
+      <div class="modal">
+        <button class="close" onclick="closeModal()">✕</button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
